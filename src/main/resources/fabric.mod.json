@@ -3,9 +3,9 @@
 	"id": "tutorialmod",
 	"version": "${version}",
 	"name": "Tutorial Mod",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "Guns!",
 	"authors": [
-		"Me!"
+		"zero"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
@@ -20,6 +20,9 @@
 		],
 		"fabric-datagen": [
 			"net.zero.tutorialmod.TutorialModDataGenerator"
+		],
+		"client": [
+			"net.zero.tutorialmod.TutorialModClient"
 		]
 	},
 	"mixins": [
