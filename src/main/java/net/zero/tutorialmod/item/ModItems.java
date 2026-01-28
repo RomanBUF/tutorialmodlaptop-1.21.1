@@ -13,6 +13,8 @@ import net.zero.tutorialmod.TutorialMod;
 
 public class ModItems {
     public static final Item Bullets = registerItem("bullets", new Item(new Item.Settings()));
+    public static final Item KeyCard_lvl_1 = registerItem("keycard_lvl_1", new Item(new Item.Settings()));
+    public static final Item KeyCard_lvl_2 = registerItem("keycard_lvl_2", new Item(new Item.Settings()));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(TutorialMod.MOD_ID, name), item);
@@ -23,6 +25,8 @@ public class ModItems {
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> {
             entries.add(Bullets);
+            entries.add(KeyCard_lvl_1);
+            entries.add(KeyCard_lvl_2);
         });
     }
 }
